@@ -1,3 +1,7 @@
+# Build to gh Pages
+1. ng build --prod --base-href "https://maureenv.github.io/token-angular/"
+2. angular-cli-ghpages
+
 # TokenAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
