@@ -1,0 +1,24 @@
+.hero__inner {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .hero-logo {
+    width: 200px;
+    margin-bottom: 50px;
+  }
+  h1 {
+    // font-family: $semibold;
+    color: #fff;
+    // font-size: $font-size-xl;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 180px;
+      padding-left: 15px;
+    }
+  }
+}
