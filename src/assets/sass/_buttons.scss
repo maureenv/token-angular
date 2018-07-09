@@ -1,0 +1,49 @@
+button {
+  appearance: none;
+}
+
+.button {
+  border-radius: 35px;
+  width: 250px;
+  padding: 20px 25px;
+  border: 0;
+  font-size: $font-size-xs;
+  text-transform: uppercase;
+  font-family: $extrabold;
+  color: #fff;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    color: #fff;
+  }
+  img {
+    width: 25px;
+    margin-right: 10px;
+  }
+}
+
+.button-dark {
+  background: $navy-blue;
+  &:hover {
+    background: darken($navy-blue, 5%);
+  }
+}
+
+.button-light {
+  background: $primary-light-blue;
+  &:hover {
+    background: darken($primary-light-blue, 5%);
+  }
+}
+
+.button-purple {
+  background: $purple;
+  width: auto;
+  &:hover {
+    background: darken($purple, 5%);
+  }
+}

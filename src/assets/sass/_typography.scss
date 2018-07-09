@@ -1,0 +1,58 @@
+/************ FONT FAMILY *************/
+@font-face {
+  font-family: 'ProximaNova-Black';
+  src: url('fonts/ProximaNova-Black.otf');
+}
+
+@font-face {
+  font-family: 'ProximaNova-Extrabold';
+  src: url('fonts/ProximaNova-Extrabold.otf');
+}
+
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url('fonts/ProximaNova-Semibold.otf');
+}
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('fonts/ProximaNova-Bold.otf');
+}
+
+@font-face {
+  font-family: 'ProximaNova-BoldIt';
+  src: url('fonts/ProximaNova-BoldIt.otf');
+}
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url('fonts/ProximaNova-Regular.otf');
+}
+
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url('fonts/ProximaNova-Light.otf');
+}
+
+@font-face {
+  font-family: 'ProximaNova-LightItalic';
+  src: url('fonts/ProximaNova-LightItalic.otf');
+}
+
+/************ FONT SIZES *************/
+$font-size-xxs: 13px;
+$font-size-xs: 16px;
+$font-size-s: 20px;
+$font-size-m: 25px;
+$font-size-l: 35px;
+$font-size-xl: 48px;
+$font-size-xxl: 65px;
+
+/************ FONT WEIGHT *************/
+$lightIt: 'ProximaNova-LightItalic';
+$light: 'ProximaNova-Light';
+$regular: 'ProximaNova-Regular';
+$bold: 'ProximaNova-Bold';
+$boldIt: 'ProximaNova-BoldIt';
+$semibold: 'ProximaNova-SemiBold';
+$extrabold: 'ProximaNova-Extrabold';

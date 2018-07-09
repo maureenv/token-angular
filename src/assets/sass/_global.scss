@@ -1,0 +1,30 @@
+body, h1, h2, h3, h4, div, p {
+  color: $gray-text;
+}
+
+.spacer-small {
+  margin-top: 30px;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 30px;
+  @media screen and (max-width: 800px ) {
+    padding: 50px 15px;
+  }
+}
+
+.blue-bg {
+  background: $sky-blue;
+}
+
+.gradient-bg {
+  @include gradient;
+}
+
+.auto-width {
+  width: auto;
+}
