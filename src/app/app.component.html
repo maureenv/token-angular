@@ -1,30 +1,19 @@
-<div>
-  <nav>
-    <img src="assets/images/fucktoken-text-logo.png" alt="fuck token logo"/>
-    <ul>
-      <li><a href="#">home</a></li>
-      <li><a href="#">fuckhub</a></li>
-      <li><a href="#">about</a></li>
-      <li><a href="#">contact</a></li>
-    </ul>
-  </nav>
-</div>
-
+<app-navigation></app-navigation>
 <div>
   <div class="section-container blue-bg">
     <div class="hero__inner">
       <img class="hero-logo" src="assets/images/fucktoken-circle-logo.png" alt="Fuck token logo"/>
       <h1> Express yourself, give a <img src="assets/images/fuck.png" alt="fuck"/></h1>
       <div class="button-container">
-        <button class="button button-light"><img src="assets/images/icon-piechart.png" alt="pie icon"/><p>Enter Fuckhub</p></button>
-        <button class="button button-dark"><img src="assets/images/icon-coins.png" alt="coin icon"/><p>Get Tokens</p></button>
+        <a class="button button-light" href="https://hub.fucktoken.com/auth/signin"><img src="assets/images/icon-piechart.png" alt="pie icon"/><p>Enter Fuckhub</p></a>
+        <a class="button button-dark" href="https://idex.market/eth/fuck"><img src="assets/images/icon-coins.png" alt="coin icon"/><p>Get Tokens</p></a>
       </div>
     </div>
   </div>
 
   <div class="section-container">
     <div class="what-container__inner">
-      <div class="video-container">
+      <div id="about" class="video-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/s_NiGNa6XmA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="what-description">
@@ -51,20 +40,20 @@
       <h3 class="section-subtitle"> Connect all of your social media accounts to one tipping wallet </h3>
       <div class="logos-container">
         <div class="logo-column">
-          <img src="assets/images/twitter.jpg" alt="twitter"/>
-          <img src="assets/images/reddit.jpg" alt="reddit"/>
-          <img src="assets/images/discord.jpg" alt="discord"/>
+          <img src="assets/images/twitter.png" alt="twitter"/>
+          <img src="assets/images/reddit.png" alt="reddit"/>
+          <img src="assets/images/discord.png" alt="discord"/>
         </div>
         <div class="logo-column">
           <img class="wallet" src="assets/images/fuck-hub-wallet.png" alt="wallet"/>
         </div>
         <div class="logo-column">
-          <img src="assets/images/telegram.jpg" alt="mail"/>
-          <img src="assets/images/twitch.jpg" alt="twitch"/>
-          <img src="assets/images/slack.jpg" alt="slack"/>
+          <img src="assets/images/telegram.png" alt="mail"/>
+          <img src="assets/images/twitch.png" alt="twitch"/>
+          <img src="assets/images/slack.png" alt="slack"/>
         </div>
       </div>
-      <button class="button button-purple auto-width"><img src="assets/images/icon-piechart.png" alt="pie icon"/><p>Sign-Up For Fuckhub </p></button>
+      <a href="https://hub.fucktoken.com/" class="button button-purple auto-width"><img src="assets/images/icon-piechart.png" alt="pie icon"/><p>Sign-Up For Fuckhub </p></a>
     </div>
   </div>
   <div class="section-container gradient-bg">
@@ -84,7 +73,7 @@
             <p> Want to know how often you give a FUCK?  Our charts and statistics can show exactly how much of a FUCK you give (or don’t). </p>
           </div>
           <div class="grid-item">
-            <img src="assets/images/nofees.png" alt="wallet"/>
+            <img src="assets/images/accountcreation.png" alt="wallet"/>
             <p class="title"> Account Creation </p>
             <p> FuckHub wallets are automatically generated for new users.  Tipping someone a FUCK allows them to immediately join the fun, without the hassle of signing up. </p>
           </div>
@@ -110,7 +99,7 @@
   <div class="section-container gray-bg">
     <div class="section-title-container">
       <h2 class="section-title"> Tipping bots </h2>
-      <h3 class="section-subtitle"> Tips from over 5 social media accounts. See the Tip-Bots in action. </h3>
+      <h3 class="section-subtitle"> Tip or burn from over 5 social media platforms. See the bots in action. </h3>
     </div>
     <div class="two-column-container">
       <div class="two-column-container__inner">
@@ -125,34 +114,4 @@
   </div>
 </div>
 
-<footer class="footer">
-  <div class="footer__inner">
-    <img src="assets/images/fucktoken-circle-logo.png" alt="FuckToken logo"/>
-    <div class="footer-links-container">
-      <div>
-        <p class="footer-title"> Links </p>
-        <a href="#"> Home </a>
-        <a href="#"> Wiki </a>
-        <a href="#"> FuckHub </a>
-        <a href="#"> The FUCK Manifesto </a>
-        <a href="#"> Contact Us </a>
-      </div>
-      <div>
-        <p class="footer-title"> Social </p>
-        <a href="#"> Blog </a>
-        <a href="#"> Twitter </a>
-        <a href="#"> Reddit </a>
-        <a href="#"> Telegram </a>
-        <a href="#"> Discard </a>
-        <a href="#"> Slack </a>
-        <a href="#"> YouTube </a>
-      </div>
-      <div>
-        <p class="footer-title"> Contact US </p>
-        <p> Telegram is our official support channel: </p>
-        <a class="bold-link" href="https://t.me/FuckToken"> https://t.me/FuckToken </a>
-        <p> Press or other inquiries: <a href="mailto:contact@fucktoken.com">contact@fucktoken.com</a></p>
-      </div>
-    </div>
-  </div>
-</footer>
+<app-footer></app-footer>

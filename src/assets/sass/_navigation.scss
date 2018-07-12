@@ -1,18 +1,27 @@
-// import React from 'react';
-// import logo from '../../../images/fucktoken-text-logo.png'
-//
-// const Navigation = () =>
-//   (<nav>
-//     <img src={ logo } alt="fuck token logo"/>
-//     <ul>
-//       <li><a href="#">home</a></li>
-//       <li><a href="#">fuckhub</a></li>
-//       <li><a href="#">about</a></li>
-//       <li><a href="#">contact</a></li>
-//     </ul>
-//   </nav>);
-//
-// export default Navigation;
+.large-screen-nav {
+  @media screen and (min-width: 800px ) {
+    display: flex;
+  }
+  @media screen and (max-width: 800px ) {
+    display: none;
+  }
+}
+
+.small-screen-nav {
+  @media screen and (min-width: 800px ) {
+    display: none;
+  }
+  @media screen and (max-width: 800px ) {
+    display: flex;
+  }
+}
+
+.nav-logo {
+  @media screen and (max-width: 500px ) {
+    width: 150px;
+  }
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -22,6 +31,7 @@ nav {
   height: 100px;
   img {
     width: 200px;
+    cursor: pointer;
   }
   ul {
     display: flex;
@@ -34,4 +44,43 @@ nav {
     cursor: pointer;
     display: inline-block;
   }
+  @media screen and (max-width: 500px ) {
+    padding: 0 20px;
+  }
+}
+
+.fixed-nav {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include gradient;
+  img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    cursor: pointer;
+  }
+  ul {
+    flex-direction: column;
+    text-align: center;
+    font-size: $font-size-l;
+    @media screen and (max-width: 500px ) {
+      font-size: $font-size-m;
+    }
+  }
+  a {
+    color: #fff;
+  }
+}
+
+.burger {
+  width: 40px;
+  cursor: pointer;
 }

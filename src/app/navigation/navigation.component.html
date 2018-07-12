@@ -1,0 +1,27 @@
+<div id="home">
+  <nav class="large-screen-nav">
+    <img src="assets/images/fucktoken-text-logo.png" alt="fuck token logo"/>
+    <ul>
+      <!--<li><a href="#">home</a></li>-->
+      <li><a href="https://hub.fucktoken.com/">fuckhub</a></li>
+      <li><a href="#about">about</a></li>
+      <!--<li><a href="#">contact</a></li>-->
+    </ul>
+  </nav>
+
+  <nav class="small-screen-nav">
+    <img class="nav-logo" src="assets/images/fucktoken-text-logo.png" alt="fuck token logo"/>
+    <img class="burger" src="assets/images/burger-icon.png" alt="navigation" (click)="onSelect()" />
+      <div *ngIf="showNav">
+      <div class="fixed-nav">
+        <img src="assets/images/close.png" (click)="closeNav()" alt="close navigation"/>
+        <ul>
+          <!--<li (click)="closeNav()"><a href="#">home</a></li>-->
+          <li (click)="closeNav()"><a href="https://hub.fucktoken.com/">fuckhub</a></li>
+          <li (click)="closeNav()"><a href="#about">about</a></li>
+          <!--<li><a href="#">contact</a></li>-->
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
