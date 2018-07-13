@@ -17,6 +17,13 @@ body, h1, h2, h3, h4, div, p {
   }
 }
 
+.iframe-container {
+  padding: 100px 30px;
+  @media screen and (max-width: 800px ) {
+    padding: 50px 15px;
+  }
+}
+
 .blue-bg {
   background: $sky-blue;
 }

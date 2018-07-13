@@ -133,6 +133,7 @@
   width: 100%;
   height: 100%;
   display: flex;
+  margin: auto;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -148,6 +149,12 @@
     position: absolute;
     width: 100%;
     height: 100%;
+  }
+}
+
+@supports (-ms-ime-align:auto) {
+  .video-container {
+    height: 500px;
   }
 }
 
@@ -181,7 +188,7 @@
       }
     }
     p {
-      font-size: $font-size-xxs;
+      font-size: 15px;
     }
   }
 }
@@ -236,7 +243,7 @@
       margin-bottom: 15px;
     }
     p {
-      font-size: $font-size-xxs;
+      font-size: 15px;
       text-align: center;
     }
   }
@@ -364,7 +371,7 @@
     line-height: 1.4;
     width: 90%;
     @media screen and (max-width: 500px ) {
-      font-size: $font-size-xxs;
+      font-size: 15px;
     }
   }
   .title {
