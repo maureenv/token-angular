@@ -1,31 +1,89 @@
-// <div class="contact-container gradient-bg">
-//   <div class="contact-container__inner">
-//     <h1> Share your contact info </h1>
-//     <div class="form-field">
-//       <label> First Name* </label>
-//       <input type="text"/>
-//     </div>
-//     <div class="form-field">
-//       <label> Email* </label>
-//       <input type="text"/>
-//     </div>
-//     <div class="form-field">
-//       <label> Message </label>
-//       <textarea></textarea>
-//     </div>
-//     <button class="button button-dark" href="https://hub.fucktoken.com/auth/signin"><img src="assets/images/mail.png" alt="pie icon"/><p>Send Message</p></button>
-//   </div>
-// </div>
-
 .contact-container {
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
-  h1 {
+  h2 {
     text-align: center;
     color: #fff;
-    font-size: $font-size-l;
+    font-size: $font-size-m;
+    font-family: $semibold;
+  }
+  p {
+    color: #fff;
     font-family: $regular;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  a {
+    color: #fff;
+    font-family: $regular;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .button {
+    width: 100%;
+    font-size: 15px;
+    background: $dark-navy-blue;
+  }
+}
+
+.contact-container__inner {
+  margin: 80px 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  .telegram {
+    width: 50px;
+    margin: 20px 0;
+  }
+  .email {
+    width: 50px;
+    margin-bottom: 40px;
+  }
+  .dots {
+    width: 70px;
+    margin: 30px 0;
+  }
+}
+
+.form-container {
+  margin: 50px 0;
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 20px;
+  label {
+    color: #fff;
+    font-size: $font-size-xxs;
+    font-family: $regular;
+    margin-bottom: 5px;
+  }
+  input,
+  textarea {
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    font-family: $regular;
+    padding: 10px;
+    font-size: $font-size-xs;
+    color: $gray-text;
+    box-sizing: border-box;
+  }
+  textarea {
+    height: 100px;
+    resize: none;
   }
 }
